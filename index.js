@@ -15,7 +15,7 @@ const autoCompleteConfig ={
    // argument 5, how to fetch the data
     async fetchData(searchTerm){
        // we add the static url then the dynamic parts in the param
-        const response = await axios.get("http://www.omdbapi.com/", {
+        const response = await axios.get("https://www.omdbapi.com/", {
             params: {
                 apikey:'39f2c244',
                 s: searchTerm
@@ -58,7 +58,7 @@ let rightMovie;
 const onMovieSelect = async (movie,summaryElement,side) =>{
         // make a followup request to get more details about the selected movie
        // we add the static url then the dynamic parts in the param
-        const response = await axios.get("http://www.omdbapi.com/", {
+        const response = await axios.get("https://www.omdbapi.com/", {
         params: {
             apikey:'39f2c244',
             i:  movie.imdbID
