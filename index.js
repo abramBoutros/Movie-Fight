@@ -89,15 +89,15 @@ const runComparison = () =>{
         const rightSideValue = parseFloat(rightStat.dataset.value);
 
         if(rightSideValue > leftSideValue){
-            leftStat.classList.remove('is-primary');
-            leftStat.classList.add('is-warning');
-            rightStat.classList.add('is-primary');
-            rightStat.classList.remove('is-warning');
+            leftStat.classList.remove('is-success');
+            leftStat.classList.add('is-danger');
+            rightStat.classList.add('is-success');
+            rightStat.classList.remove('is-danger');
         }else if(rightSideValue < leftSideValue ){
-            rightStat.classList.remove('is-primary');
-            rightStat.classList.add('is-warning');
-            leftStat.classList.add('is-primary');
-            leftStat.classList.remove('is-warning');
+            rightStat.classList.remove('is-success');
+            rightStat.classList.add('is-danger');
+            leftStat.classList.add('is-success');
+            leftStat.classList.remove('is-danger');
         }
     })
 };
